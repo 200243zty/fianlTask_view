@@ -1,0 +1,72 @@
+@import "var.scss";
+@import "global.scss";
+
+.content {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  background-color: rgb(252,252,252);
+  border-radius: $border-radius-songlist;
+  padding: 20px 40px;
+  min-width: 1000px;
+
+  .title {
+    text-align: center;
+  }
+  > ul {
+    width: 100%;
+    padding-bottom: 50px;
+    > li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-indent: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.song-item:hover .element{
+  display: block;
+}
+.song-item {
+  @include layout;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  .element{
+    margin-top: 10px;
+    //margin-left: 24px;
+    left: 600px;
+    width: 4%;
+    display: none;
+    position:absolute
+  }
+  .item-title {
+    width: 30%;
+  }
+  .item-name {
+
+    width: 10%;
+  }
+  .item-intro {
+    width: 30%;
+  }
+  .item-count {
+    width: 10%;
+  }
+}
+
+.is-play {
+  .item-title{
+    color: rgb(30,204,148);
+  }
+
+}
+
+.icon {
+  @include icon(1.3em, $color-blue-active);
+  vertical-align: -0.3em;
+  right: 5px;
+}

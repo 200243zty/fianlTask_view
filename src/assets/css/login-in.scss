@@ -1,0 +1,46 @@
+@import "var.scss";
+@import "global.scss";
+
+.box {
+  display:flex;
+  justify-content:center;
+  margin-bottom: 50px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+  //.img {
+  //  margin-top: 24px;
+  //  width: 880px;
+  //  height: 580px;
+  //}
+
+  .login {
+    box-shadow: 5px 6px 20px 5px rgba(0, 0, 0, 0.2) ;
+    margin: 70px 0;
+    width: 300px;
+    height: 474px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    //background-image: url("https://iconfont.alicdn.com/p/illus/preview_image/eZQFvSX6g8f1/23623780-f968-475f-8da9-95f2af6e67d8.png");
+    //background-size: 100% 100%;
+    //background-repeat: no-repeat;
+    //position: absolute;
+
+    .login-head {
+      text-align: center;
+      margin-top: 70px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .login-btn {
+      @include layout(space-between);
+      button {
+        display: block;
+        width: 50%;
+      }
+    }
+  }
+}
+
+
